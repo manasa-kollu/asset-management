@@ -1,0 +1,104 @@
+/* common  css start */
+#root > section > .container-fluid > .row {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+/* sidebar css start */
+#root > section > .container-fluid > .row > div.col-lg-2 {
+  transition: all 0.2s linear;
+  position: fixed;
+  z-index: 99;
+  max-width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+#root > section > .container-fluid > .row > div.col-lg-2::-webkit-scrollbar {
+  width: 5px;
+  background: transparent;
+}
+#root
+  > section
+  > .container-fluid
+  > .row
+  > div.col-lg-2::-webkit-scrollbar-track {
+  background: transparent;
+}
+#root
+  > section
+  > .container-fluid
+  > .row
+  > div.col-lg-2::-webkit-scrollbar-thumb {
+  background: darkgrey;
+  border-radius: 50px;
+}
+
+#root > section > .container-fluid.active > .row > div.col-lg-2 {
+  width: 0px;
+  border: 0px !important;
+}
+#root > section > .container-fluid.active > .row > div.col-lg-2 > * {
+  display: none;
+}
+
+#root > section > .container-fluid > .row > div.col-lg-2 .sidebar-logo > img {
+  max-height: 55px;
+  width: auto;
+  overflow: hidden;
+  display: block;
+  margin: auto;
+}
+@media screen and (width<=767px) {
+  #root > section > .container-fluid.inactive > .row > div.col-lg-2 {
+    width: 0px;
+    border: 0px !important;
+  }
+  #root > section > .container-fluid.active > .row > div.col-lg-2 {
+    width: 100%;
+    border: 0px !important;
+  }
+  #root > section > .container-fluid.active > .row > div.col-lg-2 > * {
+    display: block;
+  }
+}
+
+/* hedaer css start */
+#root > section > .container-fluid > .row > div.col {
+  transition: all 0.2s linear !important;
+}
+#root > section > .container-fluid.active > .row > div.col {
+  margin-left: 0% !important;
+}
+
+@media screen and (width>767px) {
+  #root > section > .container-fluid > .row > div.col {
+    flex: 0 0 auto !important;
+    width: 75% !important ;
+  }
+  #root > section > .container-fluid.active > .row > div.col {
+    flex: 0 0 auto !important;
+    width: 100% !important ;
+  }
+
+  #root > section > .container-fluid.active > .row > div.col .fa-bars {
+    display: none !important;
+  }
+  #root
+    > section
+    > .container-fluid.active
+    > .row
+    > div.col
+    .fa-chevron-circle-right {
+    display: block !important;
+  }
+}
+
+@media screen and (width>=992px) {
+  #root > section > .container-fluid > .row > div.col {
+    flex: 0 0 auto !important;
+    width: 83.33% !important ;
+  }
+  #root > section > .container-fluid.active > .row > div.col {
+    flex: 0 0 auto !important;
+    width: 100% !important ;
+  }
+}
