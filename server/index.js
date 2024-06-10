@@ -8,9 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// mongoose.connect("mongodb+srv://manisyadav1999:1SBUsQcvX44xdbEG@cluster0.fgctgfy.mongodb.net/crud");
 
-// const uri = "mongodb+srv://manisyadav1999:1SBUsQcvX44xdbEG@cluster0.fgctgfy.mongodb.net/crud"
 
 
 require('dotenv').config();
